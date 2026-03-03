@@ -6,18 +6,18 @@ Homebrew tap for [PHS CLI](https://github.com/NethermindEth/angkor-platform-api)
 
 ```bash
 brew tap NethermindEth/phs
-brew install phs
+brew install --cask phs
 ```
 
 ## Upgrade
 
 ```bash
-brew upgrade phs
+brew upgrade --cask phs
 ```
 
 ## Uninstall
 
 ```bash
-brew uninstall phs
+brew uninstall --cask phs
 brew untap NethermindEth/phs
 ```
