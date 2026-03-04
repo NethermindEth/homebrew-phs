@@ -14,23 +14,31 @@ cask "phs" do
   on_macos do
     on_intel do
       url "https://github.com/NethermindEth/homebrew-phs/releases/download/v#{version}/phs_#{version}_darwin_amd64.tar.gz"
-      sha256 "f0b127b6f2e017e3c15fa44d531e958f36fc49cbbd8627b093c631a9df23e35e"
+      sha256 "7184225a8ab20c0cf650c68ee6aeda35c7001874b58da225b9bfe3c593c925b6"
     end
     on_arm do
       url "https://github.com/NethermindEth/homebrew-phs/releases/download/v#{version}/phs_#{version}_darwin_arm64.tar.gz"
-      sha256 "58826e41bfacaef99dfcbbea0e5bce80cc425a96202350258a4b67f4c1f3fa33"
+      sha256 "f45f616cf952bc461dac706dbebd10da1bf2456dd705412d0bd27a7821f18b10"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/NethermindEth/homebrew-phs/releases/download/v#{version}/phs_#{version}_linux_amd64.tar.gz"
-      sha256 "4079d0dd9c95435926bbad0bdd4345caf2deacd1ac82d6faf1557f4e8b17ca8a"
+      sha256 "91fbb4fcd9c4a335d6a0aaeeada6f6efb9235875068251bb79ce77b90d02823b"
     end
     on_arm do
       url "https://github.com/NethermindEth/homebrew-phs/releases/download/v#{version}/phs_#{version}_linux_arm64.tar.gz"
-      sha256 "1069446a2aec88e3c67b837f4c237d3e1b2a3cd5e8bd09d3424153e8b2ecbbac"
+      sha256 "6bb6e4a2b8f96da2eb99940177b29bedb2a1b3c9569614d799b944d45154edf9"
     end
+  end
+
+  postflight do
+    system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{staged_path}/phs"]
+  end
+
+  caveats do
+    "Binary is not Apple-signed. macOS may show a Gatekeeper warning on first run."
   end
 
   # No zap stanza required
