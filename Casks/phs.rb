@@ -3,7 +3,7 @@ cask "phs" do
   name "phs"
   desc "CLI for the Platform Hosting Services API"
   homepage "https://github.com/NethermindEth/angkor-platform-api"
-  version "0.2.0"
+  version "0.2.1"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "phs" do
   on_macos do
     on_intel do
       url "https://github.com/NethermindEth/homebrew-phs/releases/download/v#{version}/phs_#{version}_darwin_amd64.tar.gz"
-      sha256 "7184225a8ab20c0cf650c68ee6aeda35c7001874b58da225b9bfe3c593c925b6"
+      sha256 "8376af9421cafd81ba4de93c734ed3c3f407021ab4b476f1f033256427f531e8"
     end
     on_arm do
       url "https://github.com/NethermindEth/homebrew-phs/releases/download/v#{version}/phs_#{version}_darwin_arm64.tar.gz"
-      sha256 "f45f616cf952bc461dac706dbebd10da1bf2456dd705412d0bd27a7821f18b10"
+      sha256 "7ed1afaf50dd4d63ce03b6da8f5ca8db507a4fece5957581b3d1c2eac0d22bf8"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/NethermindEth/homebrew-phs/releases/download/v#{version}/phs_#{version}_linux_amd64.tar.gz"
-      sha256 "91fbb4fcd9c4a335d6a0aaeeada6f6efb9235875068251bb79ce77b90d02823b"
+      sha256 "31c4e8a14a1729231207518b8b8e35ac5325360d8703c371839473d0991ec5f3"
     end
     on_arm do
       url "https://github.com/NethermindEth/homebrew-phs/releases/download/v#{version}/phs_#{version}_linux_arm64.tar.gz"
-      sha256 "6bb6e4a2b8f96da2eb99940177b29bedb2a1b3c9569614d799b944d45154edf9"
+      sha256 "ec3188039890596ad763841fd75996ed9a4f46b0ba94fe641fce9c60844c1d25"
     end
   end
 
