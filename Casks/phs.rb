@@ -13,23 +13,23 @@ cask "phs" do
 
   on_macos do
     on_intel do
-      url "https://github.com/NethermindEth/angkor-platform-api/releases/download/v#{version}/angkor-platform-api_#{version}_darwin_amd64.tar.gz"
-      sha256 "ea3da0b865c559920cf94f6eade4f48eb28214831d12973433a40644d40f7baf"
+      url "https://github.com/NethermindEth/homebrew-phs/releases/download/v#{version}/phs_#{version}_darwin_amd64.tar.gz"
+      sha256 "f0b127b6f2e017e3c15fa44d531e958f36fc49cbbd8627b093c631a9df23e35e"
     end
     on_arm do
-      url "https://github.com/NethermindEth/angkor-platform-api/releases/download/v#{version}/angkor-platform-api_#{version}_darwin_arm64.tar.gz"
-      sha256 "4a266a1f4c5f556a8771021358c8b1376407141f4d44bd3448b06150d0378cff"
+      url "https://github.com/NethermindEth/homebrew-phs/releases/download/v#{version}/phs_#{version}_darwin_arm64.tar.gz"
+      sha256 "58826e41bfacaef99dfcbbea0e5bce80cc425a96202350258a4b67f4c1f3fa33"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/NethermindEth/angkor-platform-api/releases/download/v#{version}/angkor-platform-api_#{version}_linux_amd64.tar.gz"
-      sha256 "7ed777b5366ab9c0b8a20e160b8dd7321a74471c34537a481dc42433531b8b55"
+      url "https://github.com/NethermindEth/homebrew-phs/releases/download/v#{version}/phs_#{version}_linux_amd64.tar.gz"
+      sha256 "4079d0dd9c95435926bbad0bdd4345caf2deacd1ac82d6faf1557f4e8b17ca8a"
     end
     on_arm do
-      url "https://github.com/NethermindEth/angkor-platform-api/releases/download/v#{version}/angkor-platform-api_#{version}_linux_arm64.tar.gz"
-      sha256 "6d92663a3b2714ade63f36c4afb0a4270b33db875202f8a35c342099911b91b4"
+      url "https://github.com/NethermindEth/homebrew-phs/releases/download/v#{version}/phs_#{version}_linux_arm64.tar.gz"
+      sha256 "1069446a2aec88e3c67b837f4c237d3e1b2a3cd5e8bd09d3424153e8b2ecbbac"
     end
   end
 
