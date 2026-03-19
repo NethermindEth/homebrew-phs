@@ -3,7 +3,7 @@ cask "phs-mcp" do
   name "phs-mcp"
   desc "MCP server for the Platform Hosting Services API"
   homepage "https://github.com/NethermindEth/angkor-platform-api"
-  version "0.4.0"
+  version "0.5.0"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "phs-mcp" do
   on_macos do
     on_intel do
       url "https://github.com/NethermindEth/homebrew-phs/releases/download/v#{version}/phs-mcp_#{version}_darwin_amd64.tar.gz"
-      sha256 "b70330dbf1528160d95dc198e588ca259e7a2bde77e65c4c25ba1fdde915e10c"
+      sha256 "8bf61fb9e1bf61e1ccb9131cdab433e10ea739c2945edf60074aed56eb020536"
     end
     on_arm do
       url "https://github.com/NethermindEth/homebrew-phs/releases/download/v#{version}/phs-mcp_#{version}_darwin_arm64.tar.gz"
-      sha256 "4a291e4b60d1ef830031b8dc3d1c71fe1c3dff45b50fee5800a98a969c7a8217"
+      sha256 "a9a6b673a01df4b861d1d2752ff6ec335cef330fe3d90ee354d7b974a1401712"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/NethermindEth/homebrew-phs/releases/download/v#{version}/phs-mcp_#{version}_linux_amd64.tar.gz"
-      sha256 "f7ba5a46da60b6699b383386277e74f553398104c2e783063daf0b4f18a7cf52"
+      sha256 "037d2bde413e0329dd030b3c6824e8608bf6aa326718f7fbc7cfc39e699ad9ea"
     end
     on_arm do
       url "https://github.com/NethermindEth/homebrew-phs/releases/download/v#{version}/phs-mcp_#{version}_linux_arm64.tar.gz"
-      sha256 "11c0f76976c4c7efce50ed34dde051eee695ccea115b458ba019c49346d551e3"
+      sha256 "2b4c79d7b852c748a46469ffdcc3a6eae4870267828d24b682ba294941eac71e"
     end
   end
 
