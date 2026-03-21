@@ -5,20 +5,20 @@
 class PhsMcp < Formula
   desc "MCP server for the Platform Hosting Services API"
   homepage "https://github.com/NethermindEth/angkor-platform-api"
-  version "0.7.0"
+  version "0.8.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/NethermindEth/homebrew-phs/releases/download/v0.7.0/phs-mcp_0.7.0_darwin_amd64.tar.gz"
-      sha256 "f0fc7c53589699eb8685ab062fef0d18579f7b4b553f4b9fdca366d1acfb465e"
+      url "https://github.com/NethermindEth/homebrew-phs/releases/download/v0.8.0/phs-mcp_0.8.0_darwin_amd64.tar.gz"
+      sha256 "7e70e9ba32a05860340ba0d5e317d93c310057b010636cd033bf450c6832f621"
 
       define_method(:install) do
         bin.install "phs-mcp"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/NethermindEth/homebrew-phs/releases/download/v0.7.0/phs-mcp_0.7.0_darwin_arm64.tar.gz"
-      sha256 "968476c2089404c5b7272af7ce08a871ef4ae78cdd153a886948a5c4e43c88f9"
+      url "https://github.com/NethermindEth/homebrew-phs/releases/download/v0.8.0/phs-mcp_0.8.0_darwin_arm64.tar.gz"
+      sha256 "08d74d07e992608af8132daa87a92f6d919e91ec6b2fcdb1d19db2164782425f"
 
       define_method(:install) do
         bin.install "phs-mcp"
@@ -28,15 +28,15 @@ class PhsMcp < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/NethermindEth/homebrew-phs/releases/download/v0.7.0/phs-mcp_0.7.0_linux_amd64.tar.gz"
-      sha256 "d2caa15818d6939053efd40d17c3352c52528a0771a2a1c8fba05e69e06ff632"
+      url "https://github.com/NethermindEth/homebrew-phs/releases/download/v0.8.0/phs-mcp_0.8.0_linux_amd64.tar.gz"
+      sha256 "25f4e3b95ab5e917bffe2d4d23fea76efd40f16d4018ffacb67c2c370a2ee6d3"
       define_method(:install) do
         bin.install "phs-mcp"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/NethermindEth/homebrew-phs/releases/download/v0.7.0/phs-mcp_0.7.0_linux_arm64.tar.gz"
-      sha256 "e300747d63ca2f83bfc46da4cd433fc8d71be2a3a3390a993d4b8a4c53777a7c"
+      url "https://github.com/NethermindEth/homebrew-phs/releases/download/v0.8.0/phs-mcp_0.8.0_linux_arm64.tar.gz"
+      sha256 "ef1bf2ac6510ca395fca57600186f2146de1610ef6ba1e2964d5b989ded967fa"
       define_method(:install) do
         bin.install "phs-mcp"
       end
