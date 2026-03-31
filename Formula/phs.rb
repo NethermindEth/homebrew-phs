@@ -5,20 +5,20 @@
 class Phs < Formula
   desc "CLI for the Platform Hosting Services API"
   homepage "https://github.com/NethermindEth/angkor-platform-api"
-  version "0.9.0"
+  version "0.10.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/NethermindEth/homebrew-phs/releases/download/v0.9.0/phs_0.9.0_darwin_amd64.tar.gz"
-      sha256 "d0fa2fe98d782ca9e03ca48167b65fbd74158ee4c52ac9e0b46594073458aa30"
+      url "https://github.com/NethermindEth/homebrew-phs/releases/download/v0.10.0/phs_0.10.0_darwin_amd64.tar.gz"
+      sha256 "428789e7fbace2182724903bc908340ef74ab544a1c5bd1b2f80f87f7d86d77a"
 
       define_method(:install) do
         bin.install "phs"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/NethermindEth/homebrew-phs/releases/download/v0.9.0/phs_0.9.0_darwin_arm64.tar.gz"
-      sha256 "01dfbcc5a2d1f247de7afc5615be9a0af2a99fd6b7066678aa45d7ce20099336"
+      url "https://github.com/NethermindEth/homebrew-phs/releases/download/v0.10.0/phs_0.10.0_darwin_arm64.tar.gz"
+      sha256 "31ac44d013718579266beb5c1fcfffc534033bb3964c49d423e2ca2ef7858fd6"
 
       define_method(:install) do
         bin.install "phs"
@@ -28,15 +28,15 @@ class Phs < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/NethermindEth/homebrew-phs/releases/download/v0.9.0/phs_0.9.0_linux_amd64.tar.gz"
-      sha256 "a7757ba554bbff87d56d2afc53df83fad13b4522a02595db812f2adf320c598e"
+      url "https://github.com/NethermindEth/homebrew-phs/releases/download/v0.10.0/phs_0.10.0_linux_amd64.tar.gz"
+      sha256 "4c98f97d129db23100757df82419f9b9aa417a2f9afec98383a98bfc6e603a84"
       define_method(:install) do
         bin.install "phs"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/NethermindEth/homebrew-phs/releases/download/v0.9.0/phs_0.9.0_linux_arm64.tar.gz"
-      sha256 "eec80c031469d1cd6fe454eb5db92201682938617684166c73697ebf76e523c7"
+      url "https://github.com/NethermindEth/homebrew-phs/releases/download/v0.10.0/phs_0.10.0_linux_arm64.tar.gz"
+      sha256 "70776e09b559092cda87b399047d8d36d38b06cec3ce177ebf35bbb11fe19cb1"
       define_method(:install) do
         bin.install "phs"
       end
