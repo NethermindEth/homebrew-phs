@@ -1,0 +1,21 @@
+{
+    "version": "0.15.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/NethermindEth/homebrew-phs/releases/download/v0.15.0/phs_0.15.0_windows_amd64.zip",
+            "bin": [
+                "phs.exe"
+            ],
+            "hash": "1153536a5a96ce6d2d5b271e4b8f4e2f0f3600da5863230ba22c9a4167ceae07"
+        },
+        "arm64": {
+            "url": "https://github.com/NethermindEth/homebrew-phs/releases/download/v0.15.0/phs_0.15.0_windows_arm64.zip",
+            "bin": [
+                "phs.exe"
+            ],
+            "hash": "bd250e5b85e7583c6d3da63bf36ce61170bdf5ec01419b9bea0e235d32f81828"
+        }
+    },
+    "homepage": "https://github.com/NethermindEth/angkor-platform-api",
+    "description": "CLI for the Platform Hosting Services API"
+}
