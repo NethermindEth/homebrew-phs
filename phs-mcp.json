@@ -1,0 +1,21 @@
+{
+    "version": "0.15.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/NethermindEth/homebrew-phs/releases/download/v0.15.0/phs-mcp_0.15.0_windows_amd64.zip",
+            "bin": [
+                "phs-mcp.exe"
+            ],
+            "hash": "608a2081d2faa2daa283e0f2e4b408a1d2c5fd4dc8914e1d21a7fab9d3800cab"
+        },
+        "arm64": {
+            "url": "https://github.com/NethermindEth/homebrew-phs/releases/download/v0.15.0/phs-mcp_0.15.0_windows_arm64.zip",
+            "bin": [
+                "phs-mcp.exe"
+            ],
+            "hash": "0ecb0100cc4fe65be65a90ff13e2d1747109e223174bf99bd993cc498397bd06"
+        }
+    },
+    "homepage": "https://github.com/NethermindEth/angkor-platform-api",
+    "description": "MCP server for the Platform Hosting Services API"
+}
