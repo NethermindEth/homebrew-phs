@@ -1,19 +1,19 @@
 {
-    "version": "0.17.0",
+    "version": "0.18.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/NethermindEth/homebrew-phs/releases/download/v0.17.0/phs_0.17.0_windows_amd64.zip",
+            "url": "https://github.com/NethermindEth/homebrew-phs/releases/download/v0.18.0/phs_0.18.0_windows_amd64.zip",
             "bin": [
                 "phs.exe"
             ],
-            "hash": "992a50a62dc42b66a08defdc20786b1e424ba533acf680b8ae539c23d1f3848d"
+            "hash": "0525542becdb333aeb0e06dd02c3c0bed3d1607775fd8e7756c0aa26b951fb78"
         },
         "arm64": {
-            "url": "https://github.com/NethermindEth/homebrew-phs/releases/download/v0.17.0/phs_0.17.0_windows_arm64.zip",
+            "url": "https://github.com/NethermindEth/homebrew-phs/releases/download/v0.18.0/phs_0.18.0_windows_arm64.zip",
             "bin": [
                 "phs.exe"
             ],
-            "hash": "00ade9d8e1fb12c4c2ff93d3e275a0d1c1b0b4c8a4df6c04db837a681f882c39"
+            "hash": "a5a7dcd46b3abf41e1dcceb7f0904113269dce72fa937ed73454c13492b4ea3b"
         }
     },
     "homepage": "https://github.com/NethermindEth/angkor-platform-api",
